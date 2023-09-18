@@ -1,0 +1,13 @@
+diff --git a/scripts/main.lua b/scripts/main.lua
+index e3fc52d..971fd0c 100644
+--- a/scripts/main.lua
++++ b/scripts/main.lua
+@@ -140,7 +140,7 @@ local loadfn = function(modulename)
+     end
+   	return errmsg
+ end
+-table.insert(package.loaders, 2, loadfn)
++table.insert(package.searchers, 2, loadfn)
+ 
+ --patch this function because NACL has no fopen
+ if TheSim then
