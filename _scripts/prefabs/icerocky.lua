@@ -142,7 +142,8 @@ local function fn()
     inst.AnimState:SetMultColour(unpack(colours[inst.colour_idx]))
 
     inst:AddComponent("combat")
-    inst.components.combat:SetAttackPeriod(2)
+    inst.components.combat:SetAttackPeriod(3)
+    print(inst.components.combat:SetAttackPeriod(3))
     inst.components.combat:SetRange(4)
     inst.components.combat:SetDefaultDamage(100)
 
@@ -183,13 +184,11 @@ local function fn()
     inst.components.trader.deleteitemonaccept = false
 
     inst:SetBrain(brain)
-    inst:SetStateGraph("SGice_rocky")
+    inst:SetStateGraph("SGicerocky")
 
     inst:ListenForEvent("attacked", OnAttacked)
 
-    inst.components.scaler:SetScale(TUNING.ROCKY_MAX_SCALE)
-
-    inst.OnLongUpdate = grow
+    inst.components.scaler:SetScale(2.0)
 
     inst.OnSave = onsave
     inst.OnLoad = onload
@@ -197,4 +196,4 @@ local function fn()
     return inst
 end
 
-return Prefab("ice_rocky", fn, assets, prefabs)
+return Prefab("icerocky", fn, assets, prefabs)

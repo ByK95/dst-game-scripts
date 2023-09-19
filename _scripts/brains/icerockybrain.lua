@@ -77,11 +77,11 @@ local function ScaredLoseLoyalty(self)
     end
 end
 
-local RockyBrain = Class(Brain, function(self, inst)
+local IceRockyBrain = Class(Brain, function(self, inst)
     Brain._ctor(self, inst)
 end)
 
-function RockyBrain:OnStop()
+function IceRockyBrain:OnStop()
     if self.onepicscarefn ~= nil then
         self.inst:RemoveEventCallback("epicscare", self.onepicscarefn)
         self.onepicscarefn = nil
@@ -89,7 +89,7 @@ function RockyBrain:OnStop()
     end
 end
 
-function RockyBrain:OnStart()
+function IceRockyBrain:OnStart()
     if self.scareendtime == nil then
         self.scareendtime = 0
         self.onepicscarefn = function(inst, data)
