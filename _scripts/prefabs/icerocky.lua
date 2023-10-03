@@ -183,6 +183,17 @@ local function fn()
     inst.components.trader.onrefuse = OnRefuseItem
     inst.components.trader.deleteitemonaccept = false
 
+    if inst._light == nil or not inst._light:IsValid() then
+        inst._light = SpawnPrefab("yellowamuletlight")
+    end
+    inst._light.entity:SetParent(inst.entity)
+
+    if inst.components.bloomer ~= nil then
+        inst.components.bloomer:PushBloom(inst, "shaders/anim.ksh", 1)
+    else
+        inst.AnimState:SetBloomEffectHandle("shaders/anim.ksh")
+    end
+
     inst:SetBrain(brain)
     inst:SetStateGraph("SGicerocky")
 
