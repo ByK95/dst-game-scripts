@@ -9,7 +9,6 @@ for root, dirs, files in os.walk(start_path):
         if file in ('master_server_log.txt', 'client_log.txt'):
             with open(os.path.join(root, file), 'r', encoding='utf-8', errors='ignore') as f:
                 content = f.read()
-                import ipdb;ipdb.set_trace()
                 matches = pattern.findall(content)
                 for match in matches:
                     print(match)
