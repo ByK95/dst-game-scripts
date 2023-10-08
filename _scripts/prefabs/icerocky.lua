@@ -1,6 +1,6 @@
 local assets =
 {
-    Asset("ANIM", "anim/rocky.zip"),
+    Asset("ANIM", "anim/icerocky.zip"),
     Asset("SOUND", "sound/rocklobster.fsb"),
 }
 
@@ -116,7 +116,7 @@ local function fn()
 
     inst.Transform:SetFourFaced()
 
-    inst:AddTag("rocky")
+    inst:AddTag("icerocky")
     inst:AddTag("character")
     inst:AddTag("animal")
 
@@ -127,7 +127,7 @@ local function fn()
     inst:AddTag("herdmember")
 
     inst.AnimState:SetBank("rocky")
-    inst.AnimState:SetBuild("rocky")
+    inst.AnimState:SetBuild("icerocky")
     inst.AnimState:PlayAnimation("idle_loop", true)
 
     inst.DynamicShadow:SetSize(1.75, 1.75)
@@ -187,12 +187,6 @@ local function fn()
         inst._light = SpawnPrefab("yellowamuletlight")
     end
     inst._light.entity:SetParent(inst.entity)
-
-    if inst.components.bloomer ~= nil then
-        inst.components.bloomer:PushBloom(inst, "shaders/anim.ksh", 1)
-    else
-        inst.AnimState:SetBloomEffectHandle("shaders/anim.ksh")
-    end
 
     inst:SetBrain(brain)
     inst:SetStateGraph("SGicerocky")
