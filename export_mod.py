@@ -19,7 +19,7 @@ def copy_files(source_dir, destination_dir):
             shutil.copy2(source_path, destination_path)
 
 script_directory = os.path.dirname(os.path.abspath(__file__))
-source_directory = os.path.join(script_directory, 'bundle', 'output', 'hammer_swap')
-destination_directory = "D:\\SteamLibrary\\steamapps\\common\\Don't Starve Together\\mods\\animation exports\\exported"
+source_directory = os.path.join(script_directory, '_scripts')
+destination_directory = "D:\\SteamLibrary\\steamapps\\common\\Don't Starve Together\\mods\\init"
 
 copy_files(source_directory, destination_directory)
