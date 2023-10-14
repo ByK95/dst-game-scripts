@@ -946,6 +946,27 @@ local Tiers =
     },
 }
 
+local  common_random_loot = {
+    papyrus = 1,
+    --tunacan = 1,
+    blueprint = 1,
+    goldnugget = 1,
+    gears = 1,
+    purplegem = 1,
+    redgem = 1,
+    bluegem = 1,
+    rope = 1,
+    cookingrecipecard = 1,
+    scrapbook_page = 1,
+}
+
+
+local common_chance_loot = {
+    purplegem = .1,
+    redgem = .25,
+    bluegem = .25,
+}
+
 local internalloot =
 {
     --[[
@@ -991,7 +1012,7 @@ local internalloot =
     {
         loot =
         {
-            snake = 3,
+            spider = 3,     -- (old) snake
             dubloon = 3,
         },
         random_loot =
@@ -1033,26 +1054,13 @@ local internalloot =
     {
         loot =
         {
-            supertelescope = 1,
+            --supertelescope = 1,
             dubloon = 5,
-            spear_poison = 1,
-            boat_lantern = 1,
+            spear = 1,          --(old) spear_poison
+            lantern = 1,        --(old) boat_lantern
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
     },
 
     ["minerhat"] =
@@ -1061,23 +1069,10 @@ local internalloot =
         {
             minerhat = 1,
             dubloon = 5,
-            obsidianaxe = 1,
+            goldenaxe = 1,    --(old) obsidianaxe
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
     },
 
     ["seamanscarepackage"] =
@@ -1091,20 +1086,7 @@ local internalloot =
             captainhat = 1
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
     },
 
     ["gems"] =
@@ -1115,20 +1097,7 @@ local internalloot =
             goldnugget = 3,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
         chance_loot =
         {
@@ -1161,27 +1130,9 @@ local internalloot =
             tunacan = 5,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 -------------------------------------------------------DAN ADDED FROM HERE
     ["BootyInDaBooty"] =
@@ -1192,27 +1143,9 @@ local internalloot =
             piratepack = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["OneTrueEarring"] =
@@ -1221,12 +1154,7 @@ local internalloot =
         {
             earring = 1,
         },
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["PegLeg"] =
@@ -1237,27 +1165,9 @@ local internalloot =
             peg_leg = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["VolcanoStaff"] =
@@ -1268,27 +1178,9 @@ local internalloot =
             volcanostaff = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["Gladiator"] =
@@ -1301,27 +1193,9 @@ local internalloot =
             armorseashell= 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["FancyHandyMan"] =
@@ -1334,27 +1208,9 @@ local internalloot =
             goldenpickaxe= 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
 
     },
 
@@ -1367,27 +1223,9 @@ local internalloot =
             seatrap = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["Compass"] =
@@ -1402,19 +1240,7 @@ local internalloot =
         },
 
         random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        }
+         common_random_loot
     },
 
     ["Scientist"] =
@@ -1427,27 +1253,9 @@ local internalloot =
             heatrock = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["Alchemist"] =
@@ -1460,27 +1268,9 @@ local internalloot =
             blowdart_sleep = 2,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["Shaman"] =
@@ -1492,27 +1282,9 @@ local internalloot =
             amulet = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
 
     },
 
@@ -1525,27 +1297,9 @@ local internalloot =
             gunpowder = 2,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["SailorsDelight"] =
@@ -1558,27 +1312,9 @@ local internalloot =
             boat_lantern = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
 
     },
 
@@ -1591,27 +1327,9 @@ local internalloot =
             boatcannon = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["Desperado"] =
@@ -1625,27 +1343,9 @@ local internalloot =
             spear = 1,
         },
 
-    random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+    random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
 	["JewelThief"] =
@@ -1687,19 +1387,7 @@ local internalloot =
         },
 
         random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        }
+         common_random_loot
     },
 
     ["Yaar"] =
@@ -1712,27 +1400,9 @@ local internalloot =
             boatcannon = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["GdayMate"] =
@@ -1745,27 +1415,9 @@ local internalloot =
             strawhat = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
     ["ToxicAvenger"] =
     {
@@ -1777,27 +1429,9 @@ local internalloot =
             spear_poison = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["MadBomber"] =
@@ -1810,27 +1444,9 @@ local internalloot =
             gunpowder = 2,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["FancyAdventurer"] =
@@ -1845,19 +1461,7 @@ local internalloot =
         },
 
         random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        }
+         common_random_loot
     },
 
     ["ThunderBall"] =
@@ -1870,27 +1474,9 @@ local internalloot =
             blubbersuit = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["TombRaider"] =
@@ -1905,19 +1491,7 @@ local internalloot =
         },
 
         random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        }
+         common_random_loot
     },
 
     ["SteamPunk"] =
@@ -1954,27 +1528,9 @@ local internalloot =
             boatcannon = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["AyeAyeCapn"] =
@@ -1989,19 +1545,7 @@ local internalloot =
         },
 
         random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        }
+         common_random_loot
     },
 
     ["BreakWind"] =
@@ -2013,27 +1557,9 @@ local internalloot =
             obsidianmachete = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["Diviner"] =
@@ -2045,27 +1571,9 @@ local internalloot =
             gears = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["GoesComesAround"] =
@@ -2077,27 +1585,9 @@ local internalloot =
             trap_teeth = 2,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["GoldGoldGold"] =
@@ -2108,27 +1598,9 @@ local internalloot =
             goldnugget = 5,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["FirePoker"] =
@@ -2140,27 +1612,9 @@ local internalloot =
             armorobsidian = 1,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot
 
-        chance_loot =
-        {
-            purplegem = .1,
-            redgem = .25,
-            bluegem = .25,
-        }
+        chance_loot = common_chance_loot
     },
 
     ["DeadmansTreasure"] =
