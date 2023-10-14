@@ -1077,9 +1077,9 @@ local internalloot =
         loot =
         {
             dubloon = 5,
-            telescope = 1,
-            armor_lifejacket = 1,
-            captainhat = 1
+            --telescope = 1,
+            --armor_lifejacket = 1,
+            --captainhat = 1
         },
 
         random_loot = common_random_loot,
@@ -1136,7 +1136,7 @@ local internalloot =
         loot =
         {
             dubloon = 5,
-            piratepack = 1,
+            --piratepack = 1,
         },
 
         random_loot = common_random_loot,
@@ -1148,7 +1148,7 @@ local internalloot =
     {
         loot =
         {
-            earring = 1,
+            antliontrinket = 1,    --(old) earring
         },
         chance_loot = common_chance_loot
     },
@@ -1158,7 +1158,7 @@ local internalloot =
         loot =
         {
             dubloon = 2,
-            peg_leg = 1,
+            spear = 1,    --(old) peg_leg
         },
 
         random_loot = common_random_loot,
@@ -1171,7 +1171,7 @@ local internalloot =
         loot =
         {
             dubloon = 6,
-            volcanostaff = 1,
+            yellowstaff = 1,   --(old) volcanostaff
         },
 
         random_loot = common_random_loot,
@@ -1186,7 +1186,7 @@ local internalloot =
             dubloon = 2,
             footballhat = 1,
             spear = 1,
-            armorseashell= 1,
+            armormarble = 1,    --(old) armorseashell
         },
 
         random_loot = common_random_loot,
@@ -1215,7 +1215,7 @@ local internalloot =
         loot =
         {
             dubloon = 4,
-            boat_lantern = 1,
+            lantern = 1,   --(old) boat_lantern
             seatrap = 1,
         },
 
@@ -1231,12 +1231,11 @@ local internalloot =
             dubloon = 3,
             compass = 1,
             boneshard = 2,
-            ia_messagebottleempty = 1,
-            sand = 1,
+            messagebottleempty = 1,  --(old) ia_messagebottleempty
+            --sand = 1,
         },
 
-        random_loot =
-         common_random_loot
+        random_loot = common_random_loot
     },
 
     ["Scientist"] =
@@ -1259,7 +1258,7 @@ local internalloot =
         loot =
         {
             dubloon = 2,
-            antivenom = 1,
+            --antivenom = 1,
             healingsalve = 3,
             blowdart_sleep = 2,
         },
@@ -1289,7 +1288,7 @@ local internalloot =
         loot =
         {
             dubloon = 2,
-            obsidianaxe = 1,
+            moonglassaxe = 1,    --(old) obsidianaxe
             gunpowder = 2,
         },
 
@@ -1303,9 +1302,9 @@ local internalloot =
         loot =
         {
             dubloon = 4,
-            sail_cloth = 1,
+            --sail_cloth = 1,
             boatrepairkit = 1,
-            boat_lantern = 1,
+            lantern = 1,   --(old) boat_lantern
         },
 
         random_loot = common_random_loot,
@@ -1319,8 +1318,8 @@ local internalloot =
         loot =
         {
             dubloon = 3,
-            coconade = 3,
-            boatcannon = 1,
+            --coconade = 3,
+            --boatcannon = 1,
         },
 
         random_loot = common_random_loot,
@@ -1333,13 +1332,13 @@ local internalloot =
         loot =
         {
             dubloon = 1,
-            snakeskinhat = 1,
-            armor_snakeskin = 1,
-            spear_launcher = 2,
+            --snakeskinhat = 1,
+            --armor_snakeskin = 1,
+            --spear_launcher = 2,
             spear = 1,
         },
 
-    random_loot = common_random_loot,
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1355,20 +1354,7 @@ local internalloot =
 			bluegem = 3,
 		},
 	
-	random_loot =
-		{
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-		}
+	random_loot = common_random_loot
 	},
 
     ["AntiqueWarrior"] =
@@ -1382,8 +1368,7 @@ local internalloot =
             bluegem = 2,
         },
 
-        random_loot =
-         common_random_loot
+        random_loot = common_random_loot
     },
 
     ["Yaar"] =
@@ -1391,9 +1376,9 @@ local internalloot =
         loot =
         {
             dubloon = 1,
-            telescope = 1,
-            piratehat = 1,
-            boatcannon = 1,
+            --telescope = 1,
+            --piratehat = 1,
+            --boatcannon = 1,
         },
 
         random_loot = common_random_loot,
@@ -1407,7 +1392,7 @@ local internalloot =
         {
             dubloon = 3,
             boomerang = 1,
-            snakeskin = 3,
+            --snakeskin = 3,
             strawhat = 1,
         },
 
@@ -1420,9 +1405,9 @@ local internalloot =
         loot =
         {
             dubloon = 1,
-            gashat = 1,
-            venomgland = 3,
-            spear_poison = 1,
+            --gashat = 1,
+            healingsalve = 3,     --(old) venomgland
+            spear = 1,            --(old)spear_poison
         },
 
         random_loot = common_random_loot,
@@ -1435,8 +1420,8 @@ local internalloot =
         loot =
         {
             dubloon = 2,
-            coconade = 2,
-            obsidiancoconade = 1,
+            --coconade = 2,
+            gunpowder = 1,   --(old)obsidiancoconade
             gunpowder = 2,
         },
 
@@ -1450,10 +1435,10 @@ local internalloot =
         loot =
         {
             dubloon = 4,
-            goldenmachete = 1,
+            multitool_axe_pickaxe = 1,  --(old) goldenmachete
             tophat = 1,
             rope = 3,
-            telescope = 1,
+            --telescope = 1,
         },
 
         random_loot =
@@ -1465,9 +1450,9 @@ local internalloot =
         loot =
         {
             dubloon = 6,
-            spear_launcher = 2,
+            hambat = 2, --(old) spear_launcher
             spear = 1,
-            blubbersuit = 1,
+            --blubbersuit = 1,
         },
 
         random_loot = common_random_loot,
@@ -1486,8 +1471,7 @@ local internalloot =
             goldnugget = 3,
         },
 
-        random_loot =
-         common_random_loot
+        random_loot = common_random_loot
     },
 
     ["SteamPunk"] =
@@ -1501,18 +1485,7 @@ local internalloot =
             goldnugget = 2,
         },
 
-        random_loot =
-        {
-            papyrus = 1,
-            tunacan = 1,
-            blueprint = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-        }
+        random_loot = common_random_loot
     },
 
     ["CapNCrunch"] =
@@ -1520,8 +1493,8 @@ local internalloot =
         loot =
         {
             dubloon = 4,
-            piratehat = 1,
-            boatcannon = 1,
+            --piratehat = 1,
+            --boatcannon = 1,
         },
 
         random_loot = common_random_loot,
@@ -1534,14 +1507,13 @@ local internalloot =
         loot =
         {
             dubloon = 1,
-            captainhat = 1,
-            armor_lifejacket = 1,
-            tunacan = 1,
-            trawlnet = 1,
+            --captainhat = 1,
+            --armor_lifejacket = 1,
+            meat_dried = 1,    --(old) tunacan
+            --trawlnet = 1,
         },
 
-        random_loot =
-         common_random_loot
+        random_loot = common_random_loot
     },
 
     ["BreakWind"] =
@@ -1549,8 +1521,8 @@ local internalloot =
         loot =
         {
             dubloon = 4,
-            armor_windbreaker = 1,
-            obsidianmachete = 1,
+            --armor_windbreaker = 1,
+            multitool_axe_pickaxe = 1,    --(old) obsidianmachete
         },
 
         random_loot = common_random_loot,
@@ -1604,8 +1576,8 @@ local internalloot =
         loot =
         {
             dubloon = 2,
-            spear_obsidian = 1,
-            armorobsidian = 1,
+            spear_wathgrithr = 1,    --(old) spear_obsidian
+            wathgrithrhat = 1,  --(old) armorobsidian
         },
 
         random_loot = common_random_loot,
@@ -1619,29 +1591,16 @@ local internalloot =
         {
             dubloon = 4,
             boatrepairkit = 1,
-            goldenmachete = 1,
-            obsidiancoconade = 3,
+            multitool_axe_pickaxe = 1,    --(old) goldenmachete
+            --obsidiancoconade = 3,
         },
 
-        random_loot =
-        {
-            fabric = 1,
-            papyrus = 1,
-            tunacan = 1,
-            goldnugget = 1,
-            gears = 1,
-            purplegem = 1,
-            redgem = 1,
-            bluegem = 1,
-            rope = 1,
-            cookingrecipecard = 1,
-            scrapbook_page = 1,
-        },
+        random_loot = common_random_loot,
 
         chance_loot =
         {
-            harpoon = .1,
-            boatcannon = .01,
+            --harpoon = .1,
+            --boatcannon = .01,
             rope = .25,
         }
     },
@@ -1651,9 +1610,9 @@ local internalloot =
     {
         loot =
         {
-            palmleaf_umbrella = 1,
-            armor_snakeskin = 1,
-            snakeskinhat = 1,
+            grass_umbrella = 1, --(old) palmleaf_umbrella
+            --armor_snakeskin = 1,
+            --snakeskinhat = 1,
         },
     },
 
@@ -1671,7 +1630,7 @@ local internalloot =
         loot =
         {
             ice = 3,
-            hawaiianshirt = 1,
+            --hawaiianshirt = 1,
             umbrella = 1,
         },
     },
@@ -1746,10 +1705,10 @@ local internalloot =
     {
         loot =
         {
-            spear_launcher = 1,
-            spear_poison = 1,
-            armorseashell = 1,
-            coconade= 1,
+            --spear_launcher = 1,
+            spear = 1,   --(old) spear_poison
+            --armorseashell = 1,
+            --coconade= 1,
         },
     },
 
@@ -1829,9 +1788,9 @@ local internalloot =
     {
         loot =
         {
-            icehat = 1,
-            tropicalfan = 1, -- not in vanilla
-            palmleaf_umbrella = 1,
+            --icehat = 1,
+            --tropicalfan = 1, -- not in vanilla
+            umbrella = 1,  --(old) palmleaf_umbrella
         },
     },
 
@@ -1884,7 +1843,7 @@ local internalloot =
     {
         loot =
         {
-            spear_launcher = 1,
+            --spear_launcher = 1,
             spear = 1,
             goldnugget = 3,
         },
@@ -1915,7 +1874,7 @@ local internalloot =
     {
         loot =
         {
-            coconade= 3,
+            --coconade= 3,
             goldnugget = 3,
         },
     },
@@ -1924,7 +1883,7 @@ local internalloot =
     {
         loot =
         {
-            obsidian= 5,
+            thulecite = 5,  --(old) obsidian
         },
     },
 
@@ -1969,7 +1928,7 @@ local internalloot =
     {
         loot =
         {
-            monkeyball = 1,
+            --monkeyball = 1,
             cave_banana = 2,
         },
     },
@@ -1993,7 +1952,7 @@ local internalloot =
         {
             rocks = 1,
             goldnugget = 1,
-            obsidian = 1,
+            thulecite = 1,   --(old) obsidian
         },
     },
 
@@ -2035,7 +1994,7 @@ local internalloot =
     {
         loot =
         {
-            jellyfish_dead = 3,
+            lightbulb = 3, --(old) jellyfish_dead
         },
     },
 
@@ -2069,7 +2028,7 @@ local internalloot =
     {
         loot =
         {
-            limpets = 5,
+            kelp = 5,    --(old) limpets
         },
     },
 
@@ -2077,9 +2036,9 @@ local internalloot =
     {
         loot =
         {
-            limpets = 2,
-            jellyfish_dead = 1,
-            pondfish_tropical = 2,
+            kelp = 2,    --(old) limpets
+            lightbulb = 1, --(old) jellyfish_dead
+            --pondfish_tropical = 2, 
             fishmeat = 1,
         },
     },
@@ -2098,8 +2057,8 @@ local internalloot =
     {
         loot =
         {
-            dug_bambootree = 1,
-            bamboo = 3,
+            dug_monkeytail = 1, --(old) dug_bambootree
+            cutreeds = 3,    --(old)  bamboo
         },
     },
 
@@ -2158,7 +2117,7 @@ local internalloot =
             cave_banana = 1,
             dragonfruit = 1,
             watermelon = 1,
-            fig = 1, -- not in vanilla
+            --fig = 1, -- not in vanilla
         },
     },
 
@@ -2176,7 +2135,7 @@ local internalloot =
         {
             fishingrod = 1,
             fishmeat = 3,
-            pondfish_tropical = 3,
+            --pondfish_tropical = 3,
         },
     },
 
@@ -2201,7 +2160,7 @@ local internalloot =
     {
         loot =
         {
-            coconut = 5,
+            rock_avocado_fruit = 5, --(old) coconut
         },
     },
 
@@ -2228,7 +2187,7 @@ local internalloot =
         loot =
         {
             sewing_kit = 1,
-            fabric= 3,
+            --fabric= 3,
             tophat = 1,
         },
     },
@@ -2257,7 +2216,7 @@ local internalloot =
     {
         loot =
         {
-            mosquito_poison= 5,
+            mosquito = 5, --(old) mosquito_poison
         },
     },
 
@@ -2265,7 +2224,7 @@ local internalloot =
     {
         loot =
         {
-            snake = 3,
+            spider = 3, --(old) snake 
         },
     },
 
@@ -2273,7 +2232,7 @@ local internalloot =
     {
         loot =
         {
-            primeape = 2,
+            monkey = 2,   --(old) primeape
         },
     },
 
@@ -2281,7 +2240,7 @@ local internalloot =
     {
         loot =
         {
-            snake_poison = 2,
+            spider_warrior = 2,   --(old) snake_poison 
         },
     },
 
@@ -2432,7 +2391,7 @@ local internalloot =
     {
         loot =
         {
-            brainjellyhat = 1,
+            --brainjellyhat = 1,
             goldnugget = 3,
         },
     },
@@ -2453,8 +2412,8 @@ local internalloot =
     {
         loot =
         {
-            dug_bush_vine = 1,
-            vine = 3,
+            dug_sapling = 1,    --(old) dug_bush_vine
+            twigs = 3,   --(old) vine
         },
     },
 
@@ -2489,8 +2448,8 @@ local internalloot =
     {
         loot =
         {
-            nubbin = 1,
-            coral = 3,
+            --nubbin = 1,
+            beefalowool = 4,  --(old) coral
         },
     },
 
@@ -2507,7 +2466,7 @@ local internalloot =
     {
         loot =
         {
-            antivenom = 1,
+            --antivenom = 1,
             lifeinjector = 1,
             healingsalve = 1,
         },
@@ -2525,7 +2484,7 @@ local internalloot =
     {
         loot =
         {
-            seashell = 5,
+            slurtle_shellpieces = 5,   --(old) seashell
         }
     },
 
@@ -2559,7 +2518,7 @@ local internalloot =
     {
         loot =
         {
-            rainbowjellyfish_dead = 3,
+            lightbulb = 3,  --(old) rainbowjellyfish_dead
         }
     },
 
@@ -2579,7 +2538,7 @@ local internalloot =
     {
         loot =
         {
-            crocodog = 2,
+            bishop = 1,    --(old) crocodog
         },
     },
 
@@ -2611,7 +2570,7 @@ local internalloot =
     {
         loot =
         {
-            poisoncrocodog = 2,
+            knight = 2, --(old) poisoncrocodog
         },
     },
 }
@@ -2634,9 +2593,9 @@ local newtreasures =
     {
         loot =
         {
-            doydoyegg = 1,
+            --doydoyegg = 1,
             twigs = 8,
-            doydoyfeather = 2,
+            --doydoyfeather = 2,
             poop = 4,
         },
     },
@@ -2645,10 +2604,10 @@ local newtreasures =
     {
         loot =
         {
-            polly_rogershat = 1,
+            --polly_rogershat = 1,
             cutlass = 1,
             dubloon = 6,
-            earring = 1,
+            trinket_16 = 1,    --(old) earring
             meat_dried = 4,
             bananajuice = 1,
         },
