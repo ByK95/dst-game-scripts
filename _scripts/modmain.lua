@@ -6,7 +6,8 @@ require "constants"
 
 PrefabFiles = {
 	"icerocky",
-    "slotmachine"
+    "slotmachine",
+    "dubloon"
 }
 
 local function prettyPrint(tbl, indent)
