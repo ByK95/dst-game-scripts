@@ -12,6 +12,11 @@ PrefabFiles = {
     "dubloon"
 }
 
+Assets = {
+    Asset("ATLAS", "images/inventoryimages/dubloon.xml"),
+    Asset("IMAGE", "images/inventoryimages/dubloon.tex"),
+}
+
 local function prettyPrint(tbl, indent)
     if indent == nil then
         indent = ""

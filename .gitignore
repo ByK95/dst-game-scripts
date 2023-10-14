@@ -2,3 +2,4 @@ venv/
 .env
 bundle/
 references/
+tex-tool/

@@ -4,19 +4,11 @@ local assets =
 }
 
 local function shine(inst)
-    inst.task = nil
-
-    if inst.components.floater:IsFloating() then
-        inst.AnimState:PlayAnimation("sparkle_water")
-        inst.AnimState:PushAnimation("idle_water")
-    else
+    if not inst.AnimState:IsCurrentAnimation("sparkle") then
         inst.AnimState:PlayAnimation("sparkle")
-        inst.AnimState:PushAnimation("idle")
+        inst.AnimState:PushAnimation("idle", false)
     end
-
-    if inst.entity:IsAwake() then
-        inst.task = inst:DoTaskInTime(4+math.random() * 5, shine)
-    end
+    inst:DoTaskInTime(4 + math.random() * 5, shine)
 end
 
 local function fn()
@@ -27,21 +19,17 @@ local function fn()
     inst.entity:AddSoundEmitter()
     inst.entity:AddNetwork()
 
+    MakeInventoryPhysics(inst)
+
+    inst.AnimState:SetBloomEffectHandle("shaders/anim.ksh")
     inst.AnimState:SetBank("dubloon")
     inst.AnimState:SetBuild("dubloon")
     inst.AnimState:PlayAnimation("idle")
 
-    inst.pickupsound = "metal"
-
-    inst.AnimState:SetBloomEffectHandle("shaders/anim.ksh")
-
-    MakeInventoryPhysics(inst)
+    inst.pickupsound = "metal"    
 
     inst:AddTag("currency")
     inst:AddTag("molebait")
-
-    MakeInventoryFloatable(inst)
-    -- inst.components.floater:UpdateAnimations("idle_water", "idle")
 
     inst.entity:SetPristine()
 
@@ -58,13 +46,13 @@ local function fn()
     inst:AddComponent("stackable")
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_SMALLITEM
 
-    -- inst:AddComponent("appeasement")
-    -- inst.components.appeasement.appeasementvalue = TUNING.APPEASEMENT_TINY
-
     inst:AddComponent("waterproofer")
     inst.components.waterproofer.effectiveness = 0
 
     inst:AddComponent("inventoryitem")
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/dubloon.xml"
+	inst.components.inventoryitem.imagename = "dubloon"
+    inst.components.inventoryitem:SetSinks(true)
 
     inst:AddComponent("bait")
 
