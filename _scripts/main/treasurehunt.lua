@@ -2161,6 +2161,7 @@ local internalloot =
         loot =
         {
             rock_avocado_fruit = 5, --(old) coconut
+            dug_rock_avocado_bush = 1,
         },
     },
 
