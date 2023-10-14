@@ -309,10 +309,6 @@ OCTOPUSKING_LOOT = {
     },
 }
 
-if not IA_CONFIG.octopustrade then
-    OCTOPUSKING_LOOT.chestloot["tropicalbouillabaisse"] = nil
-    OCTOPUSKING_LOOT.chestloot["sharkfinsoup"] = nil
-end
 ---------------------------------------------------------------------
 
 local internaltreasure =
@@ -1060,7 +1056,7 @@ local internalloot =
             lantern = 1,        --(old) boat_lantern
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
     },
 
     ["minerhat"] =
@@ -1072,7 +1068,7 @@ local internalloot =
             goldenaxe = 1,    --(old) obsidianaxe
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
     },
 
     ["seamanscarepackage"] =
@@ -1086,7 +1082,7 @@ local internalloot =
             captainhat = 1
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
     },
 
     ["gems"] =
@@ -1097,7 +1093,7 @@ local internalloot =
             goldnugget = 3,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot =
         {
@@ -1130,7 +1126,7 @@ local internalloot =
             tunacan = 5,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1143,7 +1139,7 @@ local internalloot =
             piratepack = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1165,7 +1161,7 @@ local internalloot =
             peg_leg = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1178,7 +1174,7 @@ local internalloot =
             volcanostaff = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1193,7 +1189,7 @@ local internalloot =
             armorseashell= 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1208,7 +1204,7 @@ local internalloot =
             goldenpickaxe= 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
 
@@ -1223,7 +1219,7 @@ local internalloot =
             seatrap = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1253,7 +1249,7 @@ local internalloot =
             heatrock = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1268,7 +1264,7 @@ local internalloot =
             blowdart_sleep = 2,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1282,7 +1278,7 @@ local internalloot =
             amulet = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
 
@@ -1297,7 +1293,7 @@ local internalloot =
             gunpowder = 2,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1312,7 +1308,7 @@ local internalloot =
             boat_lantern = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
 
@@ -1327,7 +1323,7 @@ local internalloot =
             boatcannon = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1343,7 +1339,7 @@ local internalloot =
             spear = 1,
         },
 
-    random_loot = common_random_loot
+    random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1400,7 +1396,7 @@ local internalloot =
             boatcannon = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1415,7 +1411,7 @@ local internalloot =
             strawhat = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1429,7 +1425,7 @@ local internalloot =
             spear_poison = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1444,7 +1440,7 @@ local internalloot =
             gunpowder = 2,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1474,7 +1470,7 @@ local internalloot =
             blubbersuit = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1528,7 +1524,7 @@ local internalloot =
             boatcannon = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1557,7 +1553,7 @@ local internalloot =
             obsidianmachete = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1571,7 +1567,7 @@ local internalloot =
             gears = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1585,7 +1581,7 @@ local internalloot =
             trap_teeth = 2,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1598,7 +1594,7 @@ local internalloot =
             goldnugget = 5,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -1612,7 +1608,7 @@ local internalloot =
             armorobsidian = 1,
         },
 
-        random_loot = common_random_loot
+        random_loot = common_random_loot,
 
         chance_loot = common_chance_loot
     },
@@ -2763,61 +2759,6 @@ end
 
 for name, data in pairs(internalloot) do
     AddTreasureLoot(name, data)
-end
-
-if not IA_CONFIG.slotmachineloot then
-    SLOTMACHINE_LOOT.goodspawns["slot_jackpot"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_jellybeans"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_chess"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_gems"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_pollyroger"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_celestial"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_megaflare"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_nightmare"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_constructor"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_lazy"] = nil
-    --SLOTMACHINE_LOOT.goodspawns["slot_oceantrees"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_docks"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_trident"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_brain"] = nil
-    SLOTMACHINE_LOOT.goodspawns["slot_turf"] = nil
-
-    SLOTMACHINE_LOOT.okspawns["slot_vines"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_marble"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_moonrocks"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_salt"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_nubbin"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_honey"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_health"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_nitre"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_seashells"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_palmconeseeds"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_bananabush"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_monkeytails"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_rainbowjelly"] = nil
-    SLOTMACHINE_LOOT.okspawns["slot_farming"] = nil
-
-    SLOTMACHINE_LOOT.badspawns["slot_crocodogs"] = nil
-    SLOTMACHINE_LOOT.badspawns["slot_beeguards"] = nil
-    SLOTMACHINE_LOOT.badspawns["slot_peepers"] = nil
-    SLOTMACHINE_LOOT.badspawns["slot_nursespiders"] = nil
-    SLOTMACHINE_LOOT.badspawns["slot_poisoncrocodogs"] = nil
-
-    internalloot["slot_fibre"].loot = {
-        cave_banana = 1,
-        dragonfruit = 1,
-        watermelon = 1,
-    }
-    internalloot["slot_coolasice"].loot = {
-        icehat = 1,
-        palmleaf_umbrella = 1,
-    }
-end
-
-if IA_CONFIG.newloot == "part" then
-    newtreasures["moonrockseed"] = nil
-elseif IA_CONFIG.newloot == "vanilla" then
-    newtreasures = {}
 end
 
 for _, v in pairs(internaltreasure) do

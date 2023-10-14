@@ -41,7 +41,7 @@ local function fn()
     inst:AddTag("molebait")
 
     MakeInventoryFloatable(inst)
-    inst.components.floater:UpdateAnimations("idle_water", "idle")
+    -- inst.components.floater:UpdateAnimations("idle_water", "idle")
 
     inst.entity:SetPristine()
 
@@ -58,8 +58,8 @@ local function fn()
     inst:AddComponent("stackable")
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_SMALLITEM
 
-    inst:AddComponent("appeasement")
-    inst.components.appeasement.appeasementvalue = TUNING.APPEASEMENT_TINY
+    -- inst:AddComponent("appeasement")
+    -- inst.components.appeasement.appeasementvalue = TUNING.APPEASEMENT_TINY
 
     inst:AddComponent("waterproofer")
     inst.components.waterproofer.effectiveness = 0
@@ -72,7 +72,6 @@ local function fn()
 
     shine(inst)
 
-    MakeBlowInHurricane(inst, TUNING.WINDBLOWN_SCALE_MIN.MEDIUM, TUNING.WINDBLOWN_SCALE_MAX.MEDIUM)
     MakeHauntableLaunchAndSmash(inst)
 
     return inst

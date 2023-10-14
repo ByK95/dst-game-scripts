@@ -4,6 +4,8 @@ local require = GLOBAL.require
 require "constants"
 -- local brain = require("brains/testdragonflybrain")
 
+modimport "main/treasurehunt"
+
 PrefabFiles = {
 	"icerocky",
     "slotmachine",
