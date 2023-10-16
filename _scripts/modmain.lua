@@ -8,6 +8,7 @@ modimport "main/treasurehunt"
 
 PrefabFiles = {
 	"icerocky",
+    "wasp",
     "slotmachine",
     "dubloon"
 }
