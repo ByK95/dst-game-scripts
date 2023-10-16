@@ -27,6 +27,8 @@ local brain = require("brains/waspbrain")
 
 --------------------------------------------------------------------------
 
+WASP_HIT_RANGE = 4
+
 local function UpdatePlayerTargets(inst)
     local toadd = {}
     local toremove = {}
@@ -132,7 +134,6 @@ local function OnEntityWake(inst)
         inst._sleeptask = nil
     end
 
-    BoostCommanderRange(inst, inst.commanderboost)
 end
 
 --------------------------------------------------------------------------
@@ -224,7 +225,7 @@ local function fn()
     inst.components.combat:SetDefaultDamage(TUNING.BEEQUEEN_DAMAGE)
     inst.components.combat:SetAttackPeriod(TUNING.BEEQUEEN_ATTACK_PERIOD)
     inst.components.combat.playerdamagepercent = .5
-    inst.components.combat:SetRange(TUNING.BEEQUEEN_ATTACK_RANGE, TUNING.BEEQUEEN_HIT_RANGE)
+    inst.components.combat:SetRange(TUNING.BEEQUEEN_ATTACK_RANGE, WASP_HIT_RANGE)
     inst.components.combat:SetRetargetFunction(3, RetargetFn)
     inst.components.combat:SetKeepTargetFunction(KeepTargetFn)
     inst.components.combat.battlecryenabled = false
@@ -244,6 +245,7 @@ local function fn()
     inst.components.epicscare:SetRange(TUNING.BEEQUEEN_EPICSCARE_RANGE)
 
     inst:AddComponent("knownlocations")
+    inst:AddComponent("grouptargeter")
 
     MakeLargeBurnableCharacter(inst, "swap_fire")
     MakeHugeFreezableCharacter(inst, "hive_body")
@@ -254,6 +256,7 @@ local function fn()
 
     inst.hit_recovery = TUNING.BEEQUEEN_HIT_RECOVERY
     inst.spawnguards_chain = 0
+    inst.focustarget_cd = 0
 
     inst.OnEntitySleep = OnEntitySleep
     inst.OnEntityWake = OnEntityWake
