@@ -2,7 +2,7 @@
  local Layouts = GLOBAL.require("map/layouts").Layouts --this is where we add the setpiece
  local StaticLayout = GLOBAL.require("map/static_layout") --this helps us load the setpiece
  
- Layouts["slotmachine_layout.lua"] = StaticLayout.Get("map/static_layouts/slotmachine_layout.lua") --index your setpiece
+ Layouts["slotmachine_layout.lua"] = StaticLayout.Get("map/static_layouts/slotmachine_layout") --index your setpiece
  
  --AddRoomPreInit("Forest", function(room) --"Forest" is the biotope in this case
  --    if not room.contents.countstaticlayouts then

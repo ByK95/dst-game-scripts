@@ -87,7 +87,30 @@ local function OnRefuseItem(inst, item)
     inst:PushEvent("refuseitem")
 end
 
-local loot = { "rocks", "rocks", "meat", "flint", "flint" }
+local loot = { 
+    "rocks",
+    "rocks",
+    "meat",
+    "flint",
+    "flint" 
+}
+SetSharedLootTable('icerocky',
+{
+    {'ice',              1.00},
+    {'ice',              1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          0.50},
+    {'dubloon',          0.50},
+    {'dubloon',          0.50},
+    {'dubloon',          0.50},
+})
 
 local function onsave(inst, data)
     data.colour = inst.colour_idx
@@ -130,7 +153,7 @@ local function fn()
     inst.AnimState:SetBuild("icerocky")
     inst.AnimState:PlayAnimation("idle_loop", true)
 
-    inst.DynamicShadow:SetSize(1.75, 1.75)
+    inst.DynamicShadow:SetSize(1.5, 1.5)
 
     inst.entity:SetPristine()
 
@@ -150,7 +173,7 @@ local function fn()
     inst:AddComponent("knownlocations")
     inst:AddComponent("inventory")
     inst:AddComponent("lootdropper")
-    inst.components.lootdropper:SetLoot(loot)
+    inst.components.lootdropper:SetChanceLootTable('icerocky')
 
     inst:AddComponent("follower")
     inst.components.follower.maxfollowtime = TUNING.PIG_LOYALTY_MAXTIME

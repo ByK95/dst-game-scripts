@@ -19,6 +19,19 @@ SetSharedLootTable('wasp',
     {'honeycomb',        0.50},
     {'honey',            0.50},
     {'stinger',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          1.00},
+    {'dubloon',          0.50},
+    {'dubloon',          0.50},
+    {'dubloon',          0.50},
+    {'dubloon',          0.50},
+
 })
 
 --------------------------------------------------------------------------
